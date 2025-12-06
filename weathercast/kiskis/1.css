@@ -3,13 +3,14 @@
 
 
 body {
-    padding: 0;
     margin: 0;
+    padding: 0;
     background-image: url('https://images.pexels.com/photos/1254736/pexels-photo-1254736.jpeg');
-    background-size: cover;      
-    background-position: center; 
-    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 130vh;
+    background-attachment: fixed;
 }
 
 #search {
@@ -55,27 +56,29 @@ body {
 
 #day {
 margin-top: 30px;
-margin-left: 30px;
-font-size: 24px;
+margin-left: 73px;
+font-size: 20px;
 color: #ffffff;
 font-family: "Shantell Sans", cursive;
 }
 .block {
   display: flex;
   justify-content: center;
+  padding-right:20px;
+  padding-left: 20px;
 }
 
-#bigblock {
-    width: 1335px;
-    height: 350px;
+#firstblock {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 50px;
+  
 
-    padding: 20px;
-    display: grid;
-    grid-template-columns: min-content min-content;
-    grid-template-rows: repeat(2, 110px);
-    justify-content: end;
-    align-content: end;
-    column-gap: 10px;
+   width: 100%;            
+  max-width: 1335px;      
+  min-height: 390px;      
+  height: auto;
+
 
   
   margin-top: 60px;
@@ -87,6 +90,46 @@ font-family: "Shantell Sans", cursive;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
+#cityblock {
+    width: 620px;
+    height: 390px;
+    border-radius: 24px;
+   border: none;
+   background: rgba(188, 187, 187, 0);
+   
+   
+   display: flex;
+   justify-content: start;
+}
+
+#citypar {
+  margin: 60px;
+  font-size: 70px;
+  color: #ffffff;
+  font-family: "Shantell Sans", cursive;
+}
+
+#bigblock {
+    width: 625px;
+    height: 350px;
+
+    padding: 20px;
+    display: grid;
+    grid-template-columns: min-content min-content;
+    grid-template-rows: repeat(2, 110px);
+    justify-content: end;
+    align-content: end;
+    column-gap: 10px;
+  
+
+  border-radius: 24px;
+  border: none;
+  background: rgba(188, 187, 187, 0);
+  
+  
+  
+}
+
 .miniblock {
   width: 400px;
   height: 100px;
@@ -96,9 +139,17 @@ font-family: "Shantell Sans", cursive;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: start;
 }
 
-#humidity {}
+.hvwp {
+    margin: 25px;
+  margin-top: 10px;
+  font-size: 20px;
+  color: #ffffff;
+  font-family: "Shantell Sans", cursive;
+}
 
 .karusel {
   width: 100%;
@@ -111,7 +162,7 @@ font-family: "Shantell Sans", cursive;
   justify-content: center;
 }
 
-.week {
+.day {
   width: 180px;
   height: 250px;
   border-radius: 20px;
@@ -121,9 +172,19 @@ font-family: "Shantell Sans", cursive;
   -webkit-backdrop-filter: blur(5px);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   transition: transform 0.2s ease, background 0.2s ease;
+  display: flex;
+  justify-content: start;
 }
 
-.week:hover {
+.wk {
+  margin: 25px;
+  margin-top: 30;
+  font-size: 20px;
+  color: #ffffff;
+  font-family: "Shantell Sans", cursive;
+}
+
+.day:hover {
     transform: scale(1.05);
     background: rgba(255, 255, 255, 0.15);
 }
