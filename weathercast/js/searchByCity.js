@@ -1,6 +1,4 @@
-const elemOne = document.querySelectorAll('.miniblock');
-console.log(elemOne);
-
+export const searchByCity = () => {
 const form = document.querySelector('#search');
 const input = document.querySelector('#input');
 const cityName = document.querySelector('#citypar');
@@ -12,5 +10,5 @@ form.addEventListener('submit', function(event) {
 
 const date = new Date();
 
-console.log(date.getDay());
-
+console.log(date.getDay());   
+}
