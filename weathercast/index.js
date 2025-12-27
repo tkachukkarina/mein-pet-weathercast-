@@ -1,7 +1,7 @@
 import { searchByCity } from "./js/searchByCity.js";
 import { getWeatherForWeek } from "./js/weatherForWeek.js";
+import { getWeatherIndicators } from "./js/weatherIndicators.js"
 
-searchByCity()
- console.log(10)
 
- getWeatherForWeek()
+getWeatherForWeek()
+getWeatherIndicators()
