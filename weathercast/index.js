@@ -1,3 +1,6 @@
+import { getMainWeatherInfo } from "./js/mainWeatherInfo.js";
+  getMainWeatherInfo()
+
 import { searchByCity } from "./js/searchByCity.js";
   searchByCity()
 
@@ -6,3 +9,4 @@ import { getWeatherForWeek } from "./js/weatherForWeek.js";
   
 import { getWeatherIndicators } from "./js/weatherIndicators.js"
   getWeatherIndicators()
+

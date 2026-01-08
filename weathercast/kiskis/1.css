@@ -95,7 +95,7 @@ font-family: "Shantell Sans", cursive;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
-#cityblock {
+.cityblock {
     width: 620px;
     height: 390px;
     border-radius: 24px;
@@ -107,9 +107,36 @@ font-family: "Shantell Sans", cursive;
    justify-content: start;
 }
 
-#citypar {
-  margin: 60px;
+.citypar {
+  margin: 40px;
   font-size: 70px;
+  color: #ffffff;
+  font-family: "Shantell Sans", cursive;
+}
+
+.citytemp {
+  position: absolute;
+  margin-left: 90px;
+  margin-top: 150px;
+  font-size: 110px;
+  color: #ffffff;
+  font-family: "Shantell Sans", cursive;
+}
+
+.feeltemp {
+  position: absolute;
+  margin-top: 295px;
+  margin-left: 75px;
+  font-size: 20px;
+  color: #ffffff;
+  font-family: "Shantell Sans", cursive;
+}
+
+.numberinfo {
+  position: absolute;
+  margin-top: 295px;
+  margin-left: 240px;
+  font-size: 20px;
   color: #ffffff;
   font-family: "Shantell Sans", cursive;
 }

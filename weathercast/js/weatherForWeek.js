@@ -2,43 +2,43 @@
 export const getWeatherForWeek = () => {
     const weatherForWeek = [
         {
-            day: "monday",
+            day: "Понеділок",
             date: "08.12"
         },
          {
-            day: "tusday", 
+            day: "Вівторок", 
             date: "09.12"
         },
          {
-            day: "wednesday", 
+            day: "Середа", 
             date: "10.12"
         },
          {
-            day: "thusday", 
+            day: "Четвер", 
             date: "11.12"
         },
          {
-            day: "friday", 
+            day: "Пʼятниця", 
             date: "12.12"
         },
          {
-            day: "saturday", 
+            day: "Субота", 
             date: "13.12"
         },
          {
-            day: "sunday", 
+            day: "Неділя", 
             date: "14.12"
         },
         {
-            day: "monday", 
+            day: "Понеділок", 
             date: "15.12"
         },
         {
-            day: "tuesday", 
+            day: "Вівторок", 
             date: "16.12"
         },
         {
-            day: "wednesday", 
+            day: "Середа", 
             date: "17.12"
         }
     ]

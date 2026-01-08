@@ -1,7 +1,7 @@
 export const searchByCity = () => {
 const form = document.querySelector('#search');
 const input = document.querySelector('#input');
-const cityName = document.querySelector('#citypar');
+const cityName = document.querySelector('.citypar');
 
 form.addEventListener('submit', function(event) {
     event.preventDefault();
