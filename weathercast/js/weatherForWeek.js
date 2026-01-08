@@ -28,6 +28,18 @@ export const getWeatherForWeek = () => {
          {
             day: "sunday", 
             date: "14.12"
+        },
+        {
+            day: "monday", 
+            date: "15.12"
+        },
+        {
+            day: "tuesday", 
+            date: "16.12"
+        },
+        {
+            day: "wednesday", 
+            date: "17.12"
         }
     ]
 
