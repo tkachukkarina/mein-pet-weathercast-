@@ -1,12 +1,15 @@
 import { getMainWeatherInfo } from "./js/mainWeatherInfo.js";
-  getMainWeatherInfo()
-
 import { searchByCity } from "./js/searchByCity.js";
+import { getWeatherForWeek } from "./js/weatherForWeek.js";
+import { getWeatherIndicators } from "./js/weatherIndicators.js";
+  
+getMainWeatherInfo()
+
+
   searchByCity()
 
-import { getWeatherForWeek } from "./js/weatherForWeek.js";
+
   getWeatherForWeek()
   
-import { getWeatherIndicators } from "./js/weatherIndicators.js"
-  getWeatherIndicators()
 
+  getWeatherIndicators()

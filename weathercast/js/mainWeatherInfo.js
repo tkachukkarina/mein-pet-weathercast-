@@ -1,3 +1,6 @@
+import { serverInfo } from "./weatherAPI.js"
+
+
 export const getMainWeatherInfo = () => {
     const mainWeatherInfo = [
         {
@@ -9,6 +12,7 @@ export const getMainWeatherInfo = () => {
     ]
 
     const container = document.querySelector('#maininfo')
+
 
     mainWeatherInfo.forEach((item) => {
         const mainData = document.createElement('div')
@@ -35,5 +39,27 @@ export const getMainWeatherInfo = () => {
         mainData.append(feelTempInfo)
         mainData.append(numberInfo)
         container.append(mainData)
-    })
+    });
+
 }
+
+
+    export const gettempData = async (city) => {
+    
+        console.log('hello')
+
+        const temperatureElem = document.querySelector('.citytemp')
+        const feelTempElem = document.querySelector('.numberinfo')
+
+        const data = await serverInfo(city)
+
+        const temperature = Math.round(data.main.temp);
+        const feelTemp = Math.round(data.main.feels_like);
+
+        temperatureElem.textContent = `${temperature} c°`;
+        feelTempElem.textContent = `${feelTemp} c°`;
+
+    
+    
+    //getWeather(info)
+    }
