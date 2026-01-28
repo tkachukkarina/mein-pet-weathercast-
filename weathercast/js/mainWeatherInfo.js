@@ -53,13 +53,10 @@ export const getMainWeatherInfo = () => {
 
         const data = await serverInfo(city)
 
-        const temperature = Math.round(data.main.temp);
-        const feelTemp = Math.round(data.main.feels_like);
+        const temperature = Math.round(data.current.temperature_2m);
+        const feelTemp = Math.round(data.current.apparent_temperature);
 
         temperatureElem.textContent = `${temperature} c°`;
         feelTempElem.textContent = `${feelTemp} c°`;
 
-    
-    
-    //getWeather(info)
     }
